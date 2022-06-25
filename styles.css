@@ -1,0 +1,457 @@
+body{
+    color: #333;
+    margin: 0;
+    /* background-color: rgba(34, 100, 39, 0.322); */
+    font-family:"MS Pゴシック",sans-serif;
+    /* font-family: Verdana, sans-serif; */
+  
+  }
+  
+  header{
+    background-color: #c21a1a;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    align-items: center;
+    display: flex;
+    padding: 0 16px;
+  }
+  
+  header h1{
+    color: rgb(0, 0, 0);
+    line-height: 64px;
+    font-size: 20px;
+  }
+  
+  
+  
+  .sp-menu{
+    margin-left: auto;
+  }
+  
+  .sp-menu #open{
+  font-size: 32px;
+  line-height: 64px;
+  cursor: pointer;
+  position:absolute;
+  top: 0px;
+  right: 16px;
+  }
+  
+  
+  .container {
+    /* background-color: pink; */
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+  }
+  
+  /* .icon {
+    background-color: skyblue;
+  } */
+  
+  .icon img {
+    /* border-radius: 20px; */
+    border-radius: 50%;
+    border-width: 8px;
+    border-style: solid;
+    border-color: white;
+  }
+  
+  .info {
+    /* background-color: tomato; */
+    margin-left: 32px;
+  }
+  
+  .info h1 {
+    font-weight: normal;
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .info p {
+    margin: 0;
+    margin-bottom: 16px;
+  }
+  
+  .info ul {
+    margin: 0;
+    padding: 0px;
+    list-style-type: none;
+    display: flex;
+  }
+  
+  .info ul li {
+    margin-right: 8px;
+  }
+  
+  .works {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  
+  
+  }
+  
+  .works > h1{
+    font-weight:bold;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .works > section {
+    margin-bottom: 60px;
+  }
+  
+  .works > section > h1 {
+    font-weight: normal;
+  }
+  
+  
+  
+  
+  .works p {
+    line-height: 1.8;
+  }
+  
+  footer p {
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 60px;
+    color: rgba(247, 156, 20, 0.959);
+  }
+  
+  main{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .wrapMain>ul{
+    /* background-color: rgba(145, 79, 17, 0.623); */
+    /* border: 10px solid rgba(51, 51, 51, 0.685);
+    border-radius: 10%; */
+   display:flex ;
+   flex-wrap: wrap;
+    flex-direction:row;
+    /* width: 1500px; */
+  
+  }
+  .wrapMain{
+    display: inline-block;
+    text-align: left;
+  }
+  
+  
+  .charaWrap{
+    margin-left:auto;
+    margin-right: auto;
+  }
+  
+  .charaWrap>li{
+  list-style: none;
+  flex-basis:100px;
+  /* background-color: rgba(255, 0, 0, 0.808); */
+  margin-bottom:8px;
+  margin-top:2px;
+  } 
+  
+  .etoImage{
+    margin-right: auto;
+    padding: 0;
+    margin: 0;
+  list-style: none;
+    width: 150px;
+    height: 150px;
+    border-radius: 10%;
+  transition-property: background;
+  transition-duration: .4s;
+  position: relative;
+  opacity: 1;
+  /* background-color: cadetblue; */
+  }
+  
+  
+  .etoImage.hoverImage{
+    
+    background: rgba(235, 55, 10, 0.4);
+   /* animation: pulsation .7s alternate infinite;  */
+  }
+  
+  
+  
+  
+  @keyframes pulsation {
+    0% { transform: scale(1); }
+    50% { transform: scale(0.9); }
+    100% { transform: scale(1.1); }
+  }
+  
+  /* えとたちのクリックボタン */
+  .etoImage>p{
+    position: absolute;
+    bottom:-15px;
+    right: 1px;
+    color: #c21a1a;
+    /* padding-left: 100px; */
+  /* background-color: chocolate; */
+    width: 0;
+    height: 0;
+    /* border-right: 30px solid transparent; */
+  
+    border-left: 30px solid transparent;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid  chocolate;
+    font-weight:bolder;
+    /* border-bottom-right-radius: 10px 10px; */
+      /* border-bottom-right-radius: 10%; */
+    /* transform: rotate(-10deg); */
+  
+  }
+  
+  
+  /* li>p{
+    font-weight: normal;
+    margin: 0;
+    margin-left: 10px;
+  
+    display: inline-block;
+  } */
+  
+  
+  .charaWrap>li>h5{
+  /* margin-top: 2px; */
+  text-align: center;
+  line-height: 150px;
+  /* background-color: chartreuse; */
+  margin: 0;
+  padding: 0;
+  /* color: rgb(224, 17, 17);
+  text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #0fa,
+    0 0 82px #0fa,
+    0 0 92px #0fa,
+    0 0 102px #0fa,
+    0 0 151px #0fa; */
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.95);
+    text-align: center;
+    padding: 64px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .9s;
+  }
+  .overlay #close{
+    position: absolute;
+    top:16px;
+    right: 16px;
+    font-size: 32px;
+    cursor: pointer;
+  }
+  
+  .overlay ul{
+  list-style-type: none;
+  margin: 0;
+  padding: none;
+  }
+  
+  .overlay li{
+  margin-top: 24px;
+  opacity: 0;
+  transform: translateY(16px);
+  transition:opacity .3s,transform .3s;
+  }
+  
+  .overlay.show li{
+    opacity:1 ;
+  transform:none;
+  font-size:xx-large;
+  
+  }
+  
+  .overlay.show li:nth-child(1){
+    transition-delay: .1s;
+  }
+  .overlay.show li:nth-child(2){
+    transition-delay: .2s;
+  }
+  .overlay.show li:nth-child(3){
+    transition-delay: .3s;
+  }
+  .overlay.show li:nth-child(4){
+    transition-delay: .4s;
+  }
+  .overlay.show li:nth-child(5){
+    transition-delay: .5s;
+  }
+  
+  
+  .overlay.show{
+    opacity: 1;
+    pointer-events: auto;  
+  }
+  
+  .sp-menu #open.hide{
+    display: none;
+  }
+  .overlay img{
+    width:5%;
+    height: auto;
+  }
+  .startBtn{
+   font-size: xx-large;
+   /* background-color: rgb(228, 144, 144); */
+   font-weight: bold;
+   display: inline-block;
+   margin-left: 82px;
+   /* width: 100%; */
+  }
+  
+  
+  .titleLogo{
+  /* border: solid 1px black; */
+  /* margin: 0 auto; */
+  display: inline-block;
+  /* background-color: aliceblue; */
+  font-size: medium;
+  margin-left: 32px;
+  color: black;
+  }
+  
+  
+  .titleWrapper{
+    padding-top: 100px;
+    width: 196px;
+    height: 250px;
+  /* まだわからないけど、フレックスボックス */
+  display: flex;
+  justify-content: center;
+  /* 中央ぞろえ */
+  margin-right: auto;
+  margin-left: auto;
+  }
+  
+  .titleWrapper a{
+    display: block;
+    width: 100%;
+  }
+  
+  
+  /* 余計なｄｉｖがあるかんじするけど、これがないとうまくいかなかった、なぜか */
+  .titleChild img{
+    margin-left: 33px;
+  }
+  
+  .titleChild img:hover{
+  opacity: 0.5;
+  transform: translateY(16px);
+  transition:opacity .3s,transform .3s;
+  
+  }
+  .titleWrapper a{
+    text-decoration: none;
+    color: black;
+  }
+  
+  .titleWrapper a:hover{
+    cursor: pointer;
+    opacity: 0.8;
+    color: rgba(221, 205, 198, 0.719);
+    transform: translateY(16px);
+  transition:opacity .3s,transform .3s;
+  }
+  
+  .pc-menu{
+    display: none;
+  }
+  
+  @media(min-width:600px){
+    .pc-menu{
+      display: block;
+      margin-left: auto;
+    }
+    .pc-menu ul{
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+    .sp-menu{
+      display: none;
+    }
+  }
+  
+  .pc-menu a:hover{
+    background-color: rgba(51, 51, 51, 0.384);
+  }
+  
+  .pc-menu a{
+    display: block;
+    width:70px;
+    line-height: 34px;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+  }
+  
+  /* .wrapMain>ul{
+    width: 200px;
+  } */
+  
+  
+  @media(min-width:600px){
+    .wrapMain>ul{
+      /* width:800px; */
+      width:750px;
+  
+    }
+  
+    .wrapMain>ul{
+      /* background-color: rgba(145, 79, 17, 0.623); */
+      border: 10px  solid rgba(51, 51, 51, 0.685);
+      border-radius: 10%;
+    }
+    }
+  
+    .oniGroup{
+  
+      position: relative;
+      /* top:10px;
+      left:10px; */
+      height: 20px;
+      width: 279px;
+      background-color: rgb(114, 170, 216);
+      text-align: center;
+      font-size: large;
+      margin: auto;
+      padding: 1em;
+      }
+  
+    .oniSubWrapper{
+      display: flex;
+      justify-content: center;
+    }
+  
+    .oniGroup::before{
+      font-size: small;
+      content: "あのお馴染みの";
+      position: absolute;
+      top:0;
+      left:0;
+      padding: 0.2em;
+      background-color: brown;
+    }
