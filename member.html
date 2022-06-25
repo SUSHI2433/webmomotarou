@@ -1,0 +1,172 @@
+<!-- 
+<?php
+$n=mt_rand(1,3);
+
+if($n===1){
+  // $message='<scpipt>alert(1)</script>UI?UXデザイナー見習いです';
+  $message='十二支たちと旅にでるよ';
+}elseif($n===2){
+  $message='また冒険です';
+}else{
+  $message='今度は干支たちとの冒険';
+}
+
+?>
+
+
+
+<?php
+$title='';
+include('_header.php');
+?> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"content="width=device-width,initial-scale=1">
+    <title>
+      <!-- <?=htmlspecialchars($title,ENT_QUOTES,'UTF-8')?> -->
+      ぼくtitleエト</title>
+    <!-- <link rel="icon" href="favicon0.ico"> -->
+    <meta name="description" content="太郎のポートフォリオサイトです。">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<body>
+
+
+
+    <header>
+        <div class="logo">
+            <h1>ぼくの世界はエトワールド</h1>
+            <h4>android用ゲーム</h4>
+          </div>
+          <div class="pc-menu">
+          <nav>
+            <ul>
+              <li><a href="/member.html">character</a></li>
+              <li><a href="/memory.htmlmember.html">story</a></li>
+              <li><a href="/monster.htmlmember.html">monster</a></li>
+              <li><a href="#">item</a></li>
+              <li><a href="#">お便り</a></li>
+            </ul>
+          </nav>
+        </div>
+          <div class="sp-menu">
+            <span class="material-icons" id="open">menu</span>
+          </div>
+        </header>
+      
+        <div class="overlay">
+          <span class="material-icons" id="close">close</span>
+          <nav>
+            <ul>
+              <li><a href="/member.html">character</a><img  src="./imgs/hebi.png" alt="" srcset=""></li>
+              <li><a href="/memory.htmlmember.html">story</a><img  src="./imgs/hebi.png" alt="" srcset=""></li>
+              <li><a href="/monster.htmlmember.html">monster</a><img  src="./imgs/hebi.png" alt="" srcset=""></li>
+              <li><a href="#">item</a><img  src="./imgs/hebi.png" alt="" srcset=""></li>
+              <li><a href="/index.htmlmember.html">お便り</a><img  src="./imgs/hebi.png" alt="" srcset=""></li>
+            </ul>
+          </nav>
+        </div>
+
+
+
+
+
+
+<div class="container">
+  <div class="icon animate__animated animate__shakeY">
+        <img src="img/tarouBlue.png" width="120" height="120" alt="太郎のアイコンです">
+  </div>
+  <div class="info">
+        <h1>桃太郎(13)</h1>
+        <p>おにたいじ
+            <!-- <?= htmlspecialchars($message,ENT_QUOTES,'UTF-8'); ?> -->
+        </p>
+  </div>
+</div>
+
+<section class="works">
+    <hr>
+    <h1>冒険する十二支のみんなの紹介</h1>
+<main>
+  <div class="wrapMain">
+    <ul class="charaWrap">
+      <li class="etoImage"><img src="img/nezumi.png" alt=""></li>
+      <li><h5>ねずみ</h5>
+      <!-- <p>気が弱いけど、本当は、、、。<br>桃太郎のともだち。</p> -->
+    </li>
+
+      <li class="etoImage"><img src="img/usi.png" alt=""></li>
+      <li><h5>うし</h5>
+      <!-- <p>のんびりしてるけど、力持ち。</p> -->
+    </li>
+
+      <li  class="etoImage "><img src="img/tora.png" alt=""></li>
+      <li><h5>とら</h5>
+      <!-- <p>百獣の王。</p> -->
+    </li>
+
+      <li class="etoImage "><img src="img/usagi.png" alt=""></li>
+      <li><h5>うさぎ</h5>
+      <!-- <p>足がはやい。</p> -->
+    </li>
+
+    <li class="etoImage "><img src="img/tatu.png" alt=""></li>
+      <li><h5>たつ</h5>
+      <!-- <p>謎。伝説の生き物。誰もすがたを見たことがない。</p> -->
+    </li>
+
+      <li  class="etoImage"><img src="img/hebi.png" alt=""></li>
+      <!-- <li><img class="etoImage"src="img/hebi.png" alt=""></li> -->
+      <li><h5>へび(み)</h5>
+      <!-- <p>気が弱いけど、本当は、、、。<br>桃太郎のともだち。</p> -->
+    </li>
+      <!-- <li><h5>へび(み)</h5>
+      <p>巻きつくのが得意。</p></li> -->
+      <li  class="etoImage"><img src="img/uma.png" alt=""></li>
+      <li><h5>うま</h5>
+      <!-- <p>にもつをもてる。</p> -->
+    </li>
+    <li  class="etoImage animate__animated animate__shakeY"><img src="img/hituzi.png" alt=""></li>
+    <li><h5>ひつじ</h5>
+      <!-- <p>毛があたたかい。</p> -->
+    </li>
+    <li  class="etoImage animate__animated animate__fadeInUp"><img src="img/monkey.png" alt=""></li>
+      <li><h5>さる</h5>
+      <!-- <p>桃太郎のマネが本当に得意。</p> -->
+    </li>
+
+    <li  class="etoImage animate__animated animate__fadeInUp"><img src="img/tori.png" alt=""></li>
+    <li><h5>とり</h5>
+    <!-- <p>足がはやい。</p> -->
+    </li>
+    <li  class="etoImage animate__animated animate__fadeInUp"><img src="img/inu.png" alt=""></li>
+    <li><h5>いぬ</h5>
+    <!-- <p>足がはやい。</p> -->
+    </li>
+    <li  class="etoImage animate__animated animate__fadeInUp"><img src="img/inosisi.png" alt=""></li>
+    <li><h5>いのしし</h5>
+    <!-- <p>足がはやい。</p> -->
+    </li>
+
+
+    </ul>
+
+  </div>
+</main>
+  
+<!-- <?php
+    include('_footer.php');
+   -->
+   <script src="js/main.js"></script>
+
+</body>
+</html>
